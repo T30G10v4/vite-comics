@@ -75,7 +75,7 @@
                         >
                             <a 
                                 :href="`${link.href}`"
-                                class="active"
+                                :class="{'active': link.active}"
                                 >
                                 {{ link.title }}
                             
@@ -116,13 +116,16 @@ header {
                     text-decoration: none;
                     line-height: 103px;
                     position: relative;
-                    &.active {
+                    &.active::after {
+                        content: '';
+                        display: block;
+                        background-color: blue;
                         
                         position: absolute;
-                        width: 100%;
-                        height: 3px;
                         bottom: 0;
                         left: 0;
+                        width: 100%;
+                        height: 3px;
                     }
 
                 }
