@@ -98,7 +98,13 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem 0;
+        padding-top: 1rem;
+
+        img {
+
+            height: 80px;
+
+        }
 
         ul {
 
@@ -114,7 +120,7 @@ header {
 
                     display: inline-block;
                     text-decoration: none;
-                    line-height: 103px;
+                    line-height: 106px;
                     position: relative;
                     &.active::after {
                         content: '';

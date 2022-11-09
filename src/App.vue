@@ -1,12 +1,16 @@
 <script>
 
   import AppHeader from "./components/AppHeader.vue";
+  import AppJumbo from "./components/AppJumbo.vue"
+  import AppComics from "./components/AppComics.vue"
 
   export default {
 
     components: {
 
-      AppHeader
+      AppHeader,
+      AppJumbo,
+      AppComics
 
     }
 
@@ -17,7 +21,8 @@
 <template>
 
   <AppHeader />
-
+  <AppJumbo />
+  <AppComics />
 </template>
 
 <style lang="scss">
